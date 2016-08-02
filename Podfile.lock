@@ -1,0 +1,12 @@
+PODS:
+  - Anyline (3.6)
+
+DEPENDENCIES:
+  - Anyline (~> 3.6)
+
+SPEC CHECKSUMS:
+  Anyline: 27b1664cf4a5a595c5bd9a86846b14b1e5b4b887
+
+PODFILE CHECKSUM: 4845ef6be642fd89d3f2d3d29ff0874c75adfee7
+
+COCOAPODS: 1.0.1
