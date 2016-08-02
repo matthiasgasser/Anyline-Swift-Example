@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Anyline_Swift_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gbh-xu-le9" customClass="AnylineEnergyModuleView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XwL-VM-Jrz">
+                                        <rect key="frame" x="138" y="400" width="325" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="3ol-Hp-bkc"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scan Meter Now :)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oX8-ZR-oIl">
+                                        <rect key="frame" x="138" y="464" width="325" height="53"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="325" id="gUt-pW-q2l"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="27"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="XwL-VM-Jrz" firstAttribute="leading" secondItem="oX8-ZR-oIl" secondAttribute="leading" id="Aqz-MH-S7R"/>
+                                    <constraint firstAttribute="bottom" secondItem="XwL-VM-Jrz" secondAttribute="bottom" constant="144" id="Dgh-T9-cym"/>
+                                    <constraint firstItem="XwL-VM-Jrz" firstAttribute="centerX" secondItem="gbh-xu-le9" secondAttribute="centerX" id="EhQ-C5-T8o"/>
+                                    <constraint firstAttribute="bottom" secondItem="oX8-ZR-oIl" secondAttribute="bottom" constant="83" id="VzS-Ea-5p1"/>
+                                    <constraint firstItem="oX8-ZR-oIl" firstAttribute="top" secondItem="XwL-VM-Jrz" secondAttribute="bottom" constant="8" symbolic="YES" id="Z4P-X2-LeS"/>
+                                    <constraint firstItem="XwL-VM-Jrz" firstAttribute="trailing" secondItem="oX8-ZR-oIl" secondAttribute="trailing" id="x7V-VN-FwP"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="cancelOnResult" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gbh-xu-le9" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9tU-gV-yxQ"/>
+                            <constraint firstItem="gbh-xu-le9" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="L4M-mG-YPH"/>
+                            <constraint firstAttribute="trailing" secondItem="gbh-xu-le9" secondAttribute="trailing" id="RFw-7D-0fJ"/>
+                            <constraint firstItem="gbh-xu-le9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yTa-LD-gL8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="anylineEnergyView" destination="gbh-xu-le9" id="yMw-ia-Mcr"/>
+                        <outlet property="resultImage" destination="XwL-VM-Jrz" id="6hf-Av-xq4"/>
+                        <outlet property="resultLabel" destination="oX8-ZR-oIl" id="1Ov-Aa-ut9"/>
+                        <outlet property="view" destination="8bC-Xf-vdC" id="g2W-hr-i3r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="190" y="489"/>
+        </scene>
+    </scenes>
+</document>
